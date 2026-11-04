@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050d20">
+<title>ISHAN THAKUR</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+html,body{
+width:100%;
+min-height:100%;
+font-family:Arial,sans-serif;
+background:#030b19;
+color:white;
+}
+
+body{
+min-height:100svh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:clamp(10px,3.5vh,24px) 12px;
+background:
+radial-gradient(ellipse at 50% 100%,#14243b 0%,#071326 42%,#030a19 100%);
+}
+
+.page{
+width:100%;
+max-width:660px;
+border:1.5px solid #76632b;
+border-radius:48px;
+padding:clamp(24px,5vw,44px) clamp(17px,5vw,36px);
+background:linear-gradient(145deg,#071329,#050d1d 75%,#071528);
+box-shadow:0 0 20px #0008;
+}
+
+.heading{
+text-align:center;
+font-size:clamp(25px,6.7vw,52px);
+font-weight:900;
+letter-spacing:1px;
+background:linear-gradient(90deg,#f5ce43,#dce6dc,#54a8e9);
+-webkit-background-clip:text;
+color:transparent;
+white-space:nowrap;
+}
+
+.subheading{
+text-align:center;
+color:#f5c42e;
+font-size:11px;
+font-weight:900;
+letter-spacing:4px;
+margin-top:7px;
+}
+
+.profile{
+margin-top:38px;
+padding:20px;
+border:1px solid #18345b;
+border-radius:45px;
+background:#0a1934;
+display:flex;
+align-items:center;
+gap:18px;
+box-shadow:0 0 12px #102c52;
+}
+
+.avatar{
+width:clamp(85px,19vw,120px);
+height:clamp(85px,19vw,120px);
+flex-shrink:0;
+border:3px solid #ffbf00;
+border-radius:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+font-weight:900;
+color:#ffd34c;
+background:linear-gradient(145deg,#172d50,#071020);
+box-shadow:0 0 15px #e9a90066;
+}
+
+.verified{
+color:#53a9ff;
+font-weight:900;
+font-style:italic;
+font-size:15px;
+margin-bottom:8px;
+}
+
+.profile-name{
+font-size:clamp(17px,4vw,23px);
+font-weight:900;
+}
+
+.record{
+margin-top:36px;
+padding:14px 8px;
+border:1px solid #1a3a61;
+border-radius:20px;
+background:#0b1b37;
+text-align:center;
+font-size:17px;
+font-weight:900;
+font-style:italic;
+letter-spacing:4px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:36px;
+}
+
+.stat{
+min-height:92px;
+border:1px solid #152d4d;
+border-radius:18px;
+background:linear-gradient(145deg,#0b172b,#030914);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:5px;
+text-align:center;
+}
+
+.stat-icon{font-size:23px}
+.stat-title{font-size:14px;font-weight:900}
+.stat-value{font-size:13px;color:#00e99b;font-weight:900}
+
+.join{
+display:block;
+width:100%;
+margin-top:34px;
+padding:24px 8px;
+border:3px solid #e8b83f;
+border-radius:25px;
+background:#0865ed;
+color:white;
+font-size:clamp(19px,5vw,26px);
+font-weight:900;
+font-style:italic;
+letter-spacing:2px;
+text-align:center;
+text-decoration:none;
+box-shadow:0 0 17px #e9b63c55;
+}
+
+.disclaimer{
+margin-top:34px;
+padding:19px;
+border:1px solid #15243b;
+border-radius:20px;
+background:#030a15;
+color:#7e8798;
+font-size:12px;
+font-weight:900;
+line-height:1.8;
+}
+
+.disclaimer b{color:#ffb51d}
+
+.footer{
+text-align:center;
+margin-top:10px;
+font-size:10px;
+letter-spacing:2px;
+color:#26344b;
+}
+
+@media(max-width:380px){
+.page{padding:22px 14px;border-radius:35px}
+.profile{padding:14px;gap:13px;margin-top:28px}
+.record,.stats{margin-top:25px}
+.join{margin-top:25px;padding:20px 5px}
+.disclaimer{margin-top:24px;padding:14px}
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+<div class="heading">ISHAN THAKUR</div>
+<div class="subheading">THE ULTIMATE CRICKET ANALYST</div>
+
+<section class="profile">
+<div class="avatar">IT</div>
+<div>
+<div class="verified">CRICKET EXPERT ✦</div>
+<div class="profile-name">KING OF TELEGRAM</div>
+</div>
+</section>
+
+<div class="record">38/41 PASS RECORD</div>
+
+<section class="stats">
+
+<div class="stat">
+<div class="stat-icon">🏏</div>
+<div class="stat-title">BBL 2025</div>
+<div class="stat-value">52/56 PASS</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon">🏆</div>
+<div class="stat-title">WORLD CUP</div>
+<div class="stat-value">45/48 PASS</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon">⚡</div>
+<div class="stat-title">THE HUNDRED</div>
+<div class="stat-value">32/34 PASS</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon">⭐</div>
+<div class="stat-title">IPL 2026</div>
+<div class="stat-value">30/32 PASS</div>
+</div>
+
+</section>
+
+<a class="join"
+href="https://t.me/+kXzhNQcvBqUxYTg1"
+target="_blank" rel="noopener">
+JOIN CHANNEL NOW
+</a>
+
+<div class="disclaimer">
+<b>DISCLAIMER:</b> ANALYSIS FOR EDUCATIONAL PURPOSES ONLY.
+PLAY RESPONSIBLY. 18+
+</div>
+
+<div class="footer">© 2026 ISHAN THAKUR</div>
+
+</main>
+</body>
+</html>
