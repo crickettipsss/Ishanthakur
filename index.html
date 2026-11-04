@@ -23,8 +23,7 @@ display:flex;
 justify-content:center;
 align-items:flex-start;
 padding:clamp(10px,3.5vh,24px) 12px;
-background:
-radial-gradient(ellipse at 50% 100%,#14243b 0%,#071326 42%,#030a19 100%);
+background:radial-gradient(ellipse at 50% 100%,#14243b,#071326 55%,#030a19);
 }
 
 .page{
@@ -58,10 +57,10 @@ margin-top:7px;
 }
 
 .profile{
-margin-top:38px;
+margin-top:30px;
 padding:20px;
 border:1px solid #18345b;
-border-radius:45px;
+border-radius:40px;
 background:#0a1934;
 display:flex;
 align-items:center;
@@ -75,14 +74,15 @@ height:clamp(85px,19vw,120px);
 flex-shrink:0;
 border:3px solid #ffbf00;
 border-radius:22px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:34px;
-font-weight:900;
-color:#ffd34c;
-background:linear-gradient(145deg,#172d50,#071020);
+overflow:hidden;
 box-shadow:0 0 15px #e9a90066;
+}
+
+.avatar img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .verified{
@@ -99,7 +99,7 @@ font-weight:900;
 }
 
 .record{
-margin-top:36px;
+margin-top:25px;
 padding:14px 8px;
 border:1px solid #1a3a61;
 border-radius:20px;
@@ -115,7 +115,7 @@ letter-spacing:4px;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:12px;
-margin-top:36px;
+margin-top:28px;
 }
 
 .stat{
@@ -138,8 +138,8 @@ text-align:center;
 .join{
 display:block;
 width:100%;
-margin-top:34px;
-padding:24px 8px;
+margin-top:28px;
+padding:23px 8px;
 border:3px solid #e8b83f;
 border-radius:25px;
 background:#0865ed;
@@ -154,8 +154,8 @@ box-shadow:0 0 17px #e9b63c55;
 }
 
 .disclaimer{
-margin-top:34px;
-padding:19px;
+margin-top:28px;
+padding:18px;
 border:1px solid #15243b;
 border-radius:20px;
 background:#030a15;
@@ -177,25 +177,26 @@ color:#26344b;
 
 @media(max-width:380px){
 .page{padding:22px 14px;border-radius:35px}
-.profile{padding:14px;gap:13px;margin-top:28px}
-.record,.stats{margin-top:25px}
-.join{margin-top:25px;padding:20px 5px}
-.disclaimer{margin-top:24px;padding:14px}
+.profile{padding:14px;gap:13px;margin-top:25px}
+.record,.stats{margin-top:23px}
+.join{margin-top:23px;padding:19px 5px}
+.disclaimer{margin-top:22px;padding:14px}
 }
 </style>
 </head>
 
 <body>
-
 <main class="page">
 
 <div class="heading">ISHAN THAKUR</div>
 <div class="subheading">THE ULTIMATE CRICKET ANALYST</div>
 
 <section class="profile">
-<div class="avatar">IT</div>
+<div class="avatar">
+<img src="logo.jpg" alt="ISHAN THAKUR">
+</div>
 <div>
-<div class="verified">CRICKET EXPERT ✦</div>
+<div class="verified">VERIFIED EXPERT ✦</div>
 <div class="profile-name">KING OF TELEGRAM</div>
 </div>
 </section>
